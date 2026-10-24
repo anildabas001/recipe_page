@@ -127,7 +127,7 @@ body {
             background-color: var(--rose-color-50);
             border-radius: 12px;          
 
-            > h3 {                
+            > h2 {                
                 font-weight: 600;
                 font-size: 1.25em;
                 color: var(--rose-color-800);
@@ -201,14 +201,18 @@ body {
                         align-items: center;
                         line-height: 1.5;
 
-                        td {
+                        td,
+                        th {
                             flex: 1;
+                        }
 
-                            &:last-of-type {
-                                font-weight: 700;
-                                color: var(--brown-color-800);
-                            }
+                        th {
+                            text-align: start;
+                        }
 
+                        td {
+                            font-weight: 700;
+                            color: var(--brown-color-800);
                         }
 
                        &:first-of-type {
